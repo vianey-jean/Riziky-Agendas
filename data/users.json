@@ -1,0 +1,14 @@
+
+[
+    {
+      "id": 1,
+      "nom": "Dupont",
+      "prenom": "Jean",
+      "email": "jean.dupont@example.com",
+      "password": "password123",
+      "genre": "homme",
+      "adresse": "123 Rue de Paris, 75001 Paris",
+      "phone": "0612345678"
+    }
+  ]
+  
