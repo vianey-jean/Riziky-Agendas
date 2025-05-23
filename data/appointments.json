@@ -38,5 +38,35 @@
     "heure": "14:00",
     "duree": 60,
     "location": "30 rue Lambert saint Louis"
+  },
+  {
+    "id": 5,
+    "userId": 1,
+    "titre": "Christ Manentana St André",
+    "description": "Perruque blonde miel 16 pouces",
+    "date": "2025-05-24",
+    "heure": "10:00",
+    "duree": 120,
+    "location": "Devant la mairie St Andrée"
+  },
+  {
+    "id": 6,
+    "userId": 1,
+    "titre": "Randez-vous avec Lionne Lohan",
+    "description": "Peruque bouclé marron 16 pouces ",
+    "date": "2025-05-27",
+    "heure": "09:00",
+    "duree": 60,
+    "location": "parking Super U St paul"
+  },
+  {
+    "id": 7,
+    "userId": 1,
+    "titre": "Rdv avec Anane Hassani",
+    "description": "Perruque frange mais les autres sont déjà vendu",
+    "date": "2025-05-26",
+    "heure": "14:00",
+    "duree": 60,
+    "location": "La mairie Annexe St Clotilde"
   }
 ]
