@@ -14,9 +14,14 @@ if (!fs.existsSync(appointmentsFilePath)) {
 }
 
 class Appointment {
-  constructor(id, userId, titre, description, date, heure, duree, location) {
+  constructor(id, userId, statut, nom, prenom, dateNaissance, telephone, titre, description, date, heure, duree, location) {
     this.id = id;
     this.userId = userId;
+    this.statut = statut || 'validé';
+    this.nom = nom || '';
+    this.prenom = prenom || '';
+    this.dateNaissance = dateNaissance || '';
+    this.telephone = telephone || '';
     this.titre = titre;
     this.description = description;
     this.date = date;
@@ -72,7 +77,9 @@ class Appointment {
       const matchesQuery = 
         appointment.titre.toLowerCase().includes(lowerCaseQuery) ||
         appointment.description.toLowerCase().includes(lowerCaseQuery) ||
-        appointment.location.toLowerCase().includes(lowerCaseQuery);
+        appointment.location.toLowerCase().includes(lowerCaseQuery) ||
+        (appointment.nom && appointment.nom.toLowerCase().includes(lowerCaseQuery)) ||
+        (appointment.prenom && appointment.prenom.toLowerCase().includes(lowerCaseQuery));
       
       if (userId) {
         return matchesQuery && appointment.userId === parseInt(userId);
@@ -91,6 +98,11 @@ class Appointment {
     const newAppointment = {
       id: newId,
       userId: parseInt(appointmentData.userId),
+      statut: appointmentData.statut || 'validé',
+      nom: appointmentData.nom || '',
+      prenom: appointmentData.prenom || '',
+      dateNaissance: appointmentData.dateNaissance || '',
+      telephone: appointmentData.telephone || '',
       titre: appointmentData.titre,
       description: appointmentData.description,
       date: appointmentData.date,
@@ -124,7 +136,12 @@ class Appointment {
       ...appointmentData,
       id: parseInt(id),
       userId: parseInt(appointmentData.userId || appointments[index].userId),
-      duree: parseInt(appointmentData.duree || appointments[index].duree)
+      duree: parseInt(appointmentData.duree || appointments[index].duree),
+      statut: appointmentData.statut || appointments[index].statut,
+      nom: appointmentData.nom !== undefined ? appointmentData.nom : appointments[index].nom,
+      prenom: appointmentData.prenom !== undefined ? appointmentData.prenom : appointments[index].prenom,
+      dateNaissance: appointmentData.dateNaissance !== undefined ? appointmentData.dateNaissance : appointments[index].dateNaissance,
+      telephone: appointmentData.telephone !== undefined ? appointmentData.telephone : appointments[index].telephone
     };
     
     try {

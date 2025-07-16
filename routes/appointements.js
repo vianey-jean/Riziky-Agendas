@@ -134,15 +134,20 @@ const sendAppointmentNotification = async (action, appointment, user) => {
 
 // Route pour créer un nouveau rendez-vous
 router.post('/', isAuthenticated, async (req, res) => {
-  const { titre, description, date, heure, duree, location } = req.body;
+  const { statut, nom, prenom, dateNaissance, telephone, titre, description, date, heure, duree, location } = req.body;
   
   // Vérifier si toutes les données requises sont présentes
   if (!titre || !description || !date || !heure || !duree || !location) {
-    return res.status(400).json({ error: 'Tous les champs sont obligatoires' });
+    return res.status(400).json({ error: 'Tous les champs obligatoires doivent être remplis' });
   }
   
   const appointmentData = {
     userId: req.user.id,
+    statut: statut || 'validé',
+    nom: nom || '',
+    prenom: prenom || '',
+    dateNaissance: dateNaissance || '',
+    telephone: telephone || '',
     titre,
     description,
     date,
@@ -169,12 +174,17 @@ router.post('/', isAuthenticated, async (req, res) => {
 // Route pour mettre à jour un rendez-vous
 router.put('/:id', isAuthenticated, canAccessAppointment, async (req, res) => {
   const appointmentId = req.params.id;
-  const { titre, description, date, heure, duree, location } = req.body;
+  const { statut, nom, prenom, dateNaissance, telephone, titre, description, date, heure, duree, location } = req.body;
   
   const updateData = {
     userId: req.user.id // S'assurer que l'utilisateur reste le même
   };
   
+  if (statut !== undefined) updateData.statut = statut;
+  if (nom !== undefined) updateData.nom = nom;
+  if (prenom !== undefined) updateData.prenom = prenom;
+  if (dateNaissance !== undefined) updateData.dateNaissance = dateNaissance;
+  if (telephone !== undefined) updateData.telephone = telephone;
   if (titre) updateData.titre = titre;
   if (description) updateData.description = description;
   if (date) updateData.date = date;
