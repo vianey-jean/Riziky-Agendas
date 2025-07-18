@@ -28,10 +28,12 @@ app.use('/uploads', express.static(uploadsDir));
 const usersRoutes = require('./routes/users');
 const appointmentsRoutes = require('./routes/appointements');
 const contactRoutes = require('./routes/contact');
+const clientsRoutes = require('./routes/clients');
 
 app.use('/api/users', usersRoutes);
 app.use('/api/appointments', appointmentsRoutes);
 app.use('/api/contact', contactRoutes);
+app.use('/api/clients', clientsRoutes);
 
 // Route de base pour vérifier si le serveur fonctionne
 app.get('/', (req, res) => {

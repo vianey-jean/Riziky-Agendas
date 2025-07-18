@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nom": "Dupont",
+    "prenom": "Marie",
+    "email": "marie.dupont@email.com",
+    "telephone": "0123456789",
+    "adresse": "123 Rue de la Paix, Paris",
+    "dateNaissance": "1985-03-15",
+    "notes": "Client privilégié, fidèle",
+    "dateCreation": "2024-01-15",
+    "derniereVisite": "2024-07-10",
+    "status": "actif",
+    "totalRendezVous": 15
+  },
+  {
+    "id": 2,
+    "nom": "Martin",
+    "prenom": "Pierre",
+    "email": "pierre.martin@email.com",
+    "telephone": "0987654321",
+    "adresse": "456 Avenue des Champs, Lyon",
+    "dateNaissance": "1990-08-22",
+    "notes": "",
+    "dateCreation": "2024-02-20",
+    "derniereVisite": "2024-06-25",
+    "status": "actif",
+    "totalRendezVous": 8
+  }
+]
