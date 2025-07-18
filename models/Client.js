@@ -52,8 +52,8 @@ class Client {
   static save(clientData) {
     const clients = this.getAll();
     
-    // Vérifier si l'email existe déjà
-    if (clients.some(client => client.email === clientData.email)) {
+    // Vérifier si l'email existe déjà (seulement si l'email est fourni)
+    if (clientData.email && clientData.email.trim() !== '' && clients.some(client => client.email === clientData.email)) {
       return { success: false, message: 'Cet email est déjà utilisé par un autre client' };
     }
     
@@ -64,7 +64,7 @@ class Client {
       id: newId,
       nom: clientData.nom,
       prenom: clientData.prenom,
-      email: clientData.email,
+      email: clientData.email || '',
       telephone: clientData.telephone || '',
       adresse: clientData.adresse || '',
       dateNaissance: clientData.dateNaissance || null,
@@ -94,8 +94,8 @@ class Client {
       return { success: false, message: 'Client non trouvé' };
     }
     
-    // Vérifier si l'email mis à jour existe déjà chez un autre client
-    if (clientData.email && clientData.email !== clients[index].email) {
+    // Vérifier si l'email mis à jour existe déjà chez un autre client (seulement si l'email est fourni)
+    if (clientData.email && clientData.email.trim() !== '' && clientData.email !== clients[index].email) {
       if (clients.some(client => client.email === clientData.email && client.id !== parseInt(id))) {
         return { success: false, message: 'Cet email est déjà utilisé par un autre client' };
       }

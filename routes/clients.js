@@ -19,14 +19,14 @@ router.post('/', (req, res) => {
   try {
     const { nom, prenom, email, telephone, adresse, dateNaissance, notes, dateCreation, status, totalRendezVous } = req.body;
     
-    if (!nom || !prenom || !email) {
-      return res.status(400).json({ error: 'Les champs nom, prénom et email sont obligatoires' });
+    if (!nom || !prenom) {
+      return res.status(400).json({ error: 'Les champs nom et prénom sont obligatoires' });
     }
     
     const result = Client.save({
       nom,
       prenom,
-      email,
+      email: email || '',
       telephone: telephone || '',
       adresse: adresse || '',
       dateNaissance: dateNaissance || null,
