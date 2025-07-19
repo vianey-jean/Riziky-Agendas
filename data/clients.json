@@ -40,5 +40,19 @@
     "derniereVisite": null,
     "status": "actif",
     "totalRendezVous": 0
+  },
+  {
+    "id": 4,
+    "nom": "Anne Marie",
+    "prenom": "Siname",
+    "email": "",
+    "telephone": "0693026371",
+    "adresse": "30 rue de la Bourgogne Apt 27 Moufia",
+    "dateNaissance": null,
+    "notes": "Nouvelle Clientes à Moufia",
+    "dateCreation": "2025-07-19",
+    "derniereVisite": null,
+    "status": "actif",
+    "totalRendezVous": 0
   }
 ]
