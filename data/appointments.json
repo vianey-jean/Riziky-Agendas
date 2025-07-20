@@ -107,7 +107,7 @@
   {
     "id": 8,
     "userId": 1,
-    "statut": "validé",
+    "statut": "annulé",
     "nom": "Tpetasse",
     "prenom": "Choucla",
     "dateNaissance": "",
@@ -178,5 +178,20 @@
     "heure": "09:00",
     "duree": 60,
     "location": "30 rue de la Bourgogne Apt 27"
+  },
+  {
+    "id": 13,
+    "userId": 1,
+    "statut": "validé",
+    "nom": "Mg",
+    "prenom": "Gogou",
+    "dateNaissance": "",
+    "telephone": "0692554358",
+    "titre": "Perruque bouclé court 12p, gasy",
+    "description": "Perruque bouclé 12 pouce",
+    "date": "2025-07-21",
+    "heure": "10:00",
+    "duree": 60,
+    "location": "Ecole maternelle les Gaspards"
   }
 ]
