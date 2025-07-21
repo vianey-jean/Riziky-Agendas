@@ -1,4 +1,3 @@
-
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -25,15 +24,11 @@ if (!fs.existsSync(uploadsDir)) {
 app.use('/uploads', express.static(uploadsDir));
 
 // Routes
-const usersRoutes = require('./routes/users');
-const appointmentsRoutes = require('./routes/appointements');
-const contactRoutes = require('./routes/contact');
-const clientsRoutes = require('./routes/clients');
-
-app.use('/api/users', usersRoutes);
-app.use('/api/appointments', appointmentsRoutes);
-app.use('/api/contact', contactRoutes);
-app.use('/api/clients', clientsRoutes);
+app.use('/api/users', require('./routes/users'));
+app.use('/api/appointments', require('./routes/appointements'));
+app.use('/api/clients', require('./routes/clients'));
+app.use('/api/contact', require('./routes/contact'));
+app.use('/api/sms', require('./routes/sms'));
 
 // Route de base pour vérifier si le serveur fonctionne
 app.get('/', (req, res) => {
