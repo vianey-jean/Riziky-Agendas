@@ -68,5 +68,19 @@
     "derniereVisite": null,
     "status": "actif",
     "totalRendezVous": 0
+  },
+  {
+    "id": 6,
+    "nom": "Roann",
+    "prenom": "Laetitia",
+    "email": "",
+    "telephone": "0692443186",
+    "adresse": "542 rue mille Roche Saint-André",
+    "dateNaissance": null,
+    "notes": "Une cliente coiffeuse à St André",
+    "dateCreation": "2025-07-25",
+    "derniereVisite": null,
+    "status": "actif",
+    "totalRendezVous": 0
   }
 ]
