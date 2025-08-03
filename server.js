@@ -5,12 +5,18 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const path = require('path');
 const fs = require('fs');
+const http = require('http');
+const { initializeWebSocket } = require('./websocket');
 
 // Charger les variables d'environnement
 dotenv.config();
 
 // Initialiser l'application Express
 const app = express();
+const server = http.createServer(app);
+
+// Initialiser WebSocket
+initializeWebSocket(server);
 
 // Middlewares
 app.use(cors());
@@ -56,6 +62,6 @@ app.use((req, res) => {
 
 // Lancement du serveur
 const PORT = process.env.PORT || 10000;
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`Serveur démarré sur le port ${PORT}`);
 });

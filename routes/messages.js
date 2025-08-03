@@ -3,6 +3,7 @@ const express = require('express');
 const router = express.Router();
 const fs = require('fs').promises;
 const path = require('path');
+const { broadcastMessagesUpdate } = require('../websocket');
 
 const messagesFilePath = path.join(__dirname, '../data/messages.json');
 
@@ -19,6 +20,8 @@ const readMessages = async () => {
 // Fonction utilitaire pour écrire les messages
 const writeMessages = async (messages) => {
   await fs.writeFile(messagesFilePath, JSON.stringify(messages, null, 2), 'utf-8');
+  // Diffuser les changements via WebSocket
+  broadcastMessagesUpdate();
 };
 
 // GET - Récupérer tous les messages

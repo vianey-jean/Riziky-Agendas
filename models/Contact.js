@@ -2,6 +2,7 @@
 const nodemailer = require('nodemailer');
 const fs = require('fs').promises;
 const path = require('path');
+const { broadcastMessagesUpdate } = require('../websocket');
 
 const messagesFilePath = path.join(__dirname, '../data/messages.json');
 
@@ -19,6 +20,8 @@ const readMessages = async () => {
 const writeMessages = async (messages) => {
   try {
     await fs.writeFile(messagesFilePath, JSON.stringify(messages, null, 2), 'utf-8');
+    // Diffuser les changements via WebSocket
+    broadcastMessagesUpdate();
   } catch (error) {
     console.error('Erreur lors de l\'écriture des messages:', error);
   }
