@@ -82,5 +82,19 @@
     "derniereVisite": null,
     "status": "actif",
     "totalRendezVous": 0
+  },
+  {
+    "id": 7,
+    "nom": "Tiven",
+    "prenom": "Vina",
+    "email": "",
+    "telephone": "0693533174",
+    "adresse": "Super U Saint-André",
+    "dateNaissance": null,
+    "notes": "Cliente qui veux que on coupe la lace de son perruque",
+    "dateCreation": "2025-08-05",
+    "derniereVisite": null,
+    "status": "actif",
+    "totalRendezVous": 0
   }
 ]
