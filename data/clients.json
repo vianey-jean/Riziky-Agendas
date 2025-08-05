@@ -96,5 +96,33 @@
     "derniereVisite": null,
     "status": "actif",
     "totalRendezVous": 0
+  },
+  {
+    "id": 8,
+    "nom": "Soula",
+    "prenom": "Nanou ",
+    "email": "",
+    "telephone": "0693869772",
+    "adresse": "203 Rue Leopold Martin Saint-André",
+    "dateNaissance": null,
+    "notes": "Clientes a st andré",
+    "dateCreation": "2025-08-05",
+    "derniereVisite": null,
+    "status": "actif",
+    "totalRendezVous": 0
+  },
+  {
+    "id": 9,
+    "nom": "Mn",
+    "prenom": "Dalie ",
+    "email": "",
+    "telephone": "0693656467",
+    "adresse": "Super U Saint-Paul",
+    "dateNaissance": null,
+    "notes": "perruque bouclé noir 30 Pouces",
+    "dateCreation": "2025-08-05",
+    "derniereVisite": null,
+    "status": "actif",
+    "totalRendezVous": 0
   }
 ]
