@@ -124,5 +124,33 @@
     "derniereVisite": null,
     "status": "actif",
     "totalRendezVous": 0
+  },
+  {
+    "id": 10,
+    "nom": "Anne Marie",
+    "prenom": "Sinama",
+    "email": "",
+    "telephone": "0693026371",
+    "adresse": "30 rue de la Bourgogne apt 27",
+    "dateNaissance": null,
+    "notes": "Client ajouté automatiquement via rendez-vous: Rendez-vous pour livraison tissages lisse 20 pouces",
+    "dateCreation": "2025-08-06",
+    "derniereVisite": null,
+    "status": "actif",
+    "totalRendezVous": 0
+  },
+  {
+    "id": 11,
+    "nom": "Mxlle",
+    "prenom": "Intel",
+    "email": "",
+    "telephone": "0693549814",
+    "adresse": "9 rue rose des bois ste marie",
+    "dateNaissance": null,
+    "notes": "Client ajouté automatiquement via rendez-vous: Rendez-vous a st Marie pour livraison de double tissages bouclé",
+    "dateCreation": "2025-08-06",
+    "derniereVisite": null,
+    "status": "actif",
+    "totalRendezVous": 0
   }
 ]
