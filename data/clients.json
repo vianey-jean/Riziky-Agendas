@@ -152,5 +152,19 @@
     "derniereVisite": null,
     "status": "actif",
     "totalRendezVous": 0
+  },
+  {
+    "id": 12,
+    "nom": "Béné",
+    "prenom": "Doifré",
+    "email": "",
+    "telephone": "0693510111",
+    "adresse": "1 rue champ Fleuri Saint-Denis",
+    "dateNaissance": null,
+    "notes": "Client ajouté automatiquement via rendez-vous: Rendez-vous pour livraison tissages bouclé 20 pouces",
+    "dateCreation": "2025-08-07",
+    "derniereVisite": null,
+    "status": "actif",
+    "totalRendezVous": 0
   }
 ]

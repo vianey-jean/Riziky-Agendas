@@ -287,7 +287,7 @@
   {
     "id": 20,
     "userId": 1,
-    "statut": "validé",
+    "statut": "annulé",
     "nom": "Mxlle ",
     "prenom": "Intel ",
     "dateNaissance": "",
@@ -298,5 +298,20 @@
     "heure": "10:00",
     "duree": 60,
     "location": "9 rue rose des bois ste marie"
+  },
+  {
+    "id": 21,
+    "userId": 1,
+    "statut": "validé",
+    "nom": "Béné",
+    "prenom": "Doifré",
+    "dateNaissance": "",
+    "telephone": "0693510111",
+    "titre": "Rendez-vous pour livraison tissages bouclé 20 pouces",
+    "description": "Rendez-vous pour livraison tissages bouclé 20 pouces pour Béné Doifré au 1 rue champ Fleuri, tel: 0693510111",
+    "date": "2025-08-08",
+    "heure": "08:00",
+    "duree": 60,
+    "location": "1 rue champ Fleuri Saint-Denis"
   }
 ]
