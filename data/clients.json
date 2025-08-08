@@ -166,5 +166,19 @@
     "derniereVisite": null,
     "status": "actif",
     "totalRendezVous": 0
+  },
+  {
+    "id": 13,
+    "nom": "MBTS",
+    "prenom": "Mary",
+    "email": "",
+    "telephone": "0693701880",
+    "adresse": "4 bis rue aime lebon les Jacques 97480 St Joseph",
+    "dateNaissance": null,
+    "notes": "Client ajouté automatiquement via rendez-vous: rendez-vous pour livraison Perruque lisse blonde blanche",
+    "dateCreation": "2025-08-08",
+    "derniereVisite": null,
+    "status": "actif",
+    "totalRendezVous": 0
   }
 ]
