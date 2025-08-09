@@ -180,5 +180,19 @@
     "derniereVisite": null,
     "status": "actif",
     "totalRendezVous": 0
+  },
+  {
+    "id": 14,
+    "nom": "Princesse",
+    "prenom": "Ptincesse",
+    "email": "",
+    "telephone": "0692782974",
+    "adresse": "18 avenue Raymond Vergès",
+    "dateNaissance": null,
+    "notes": "Client ajouté automatiquement via rendez-vous: rendez-vous pour livraison Perruque lisse noir lace T 18pouces",
+    "dateCreation": "2025-08-09",
+    "derniereVisite": null,
+    "status": "actif",
+    "totalRendezVous": 0
   }
 ]
