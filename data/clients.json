@@ -194,5 +194,19 @@
     "derniereVisite": null,
     "status": "actif",
     "totalRendezVous": 0
+  },
+  {
+    "id": 15,
+    "nom": "Arisoa Miranville",
+    "prenom": "Monette",
+    "email": "",
+    "telephone": "0692603490",
+    "adresse": "12 rue Pitel Saint-Clotilde",
+    "dateNaissance": null,
+    "notes": "Client ajouté automatiquement via rendez-vous: Rendez-vous pour livraison Perruque Lisse blonde miel 18 pouces",
+    "dateCreation": "2025-08-10",
+    "derniereVisite": null,
+    "status": "actif",
+    "totalRendezVous": 0
   }
 ]
