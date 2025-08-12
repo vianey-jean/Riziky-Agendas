@@ -208,5 +208,33 @@
     "derniereVisite": null,
     "status": "actif",
     "totalRendezVous": 0
+  },
+  {
+    "id": 16,
+    "nom": "Chaibati",
+    "prenom": "Toufahat Gharibe",
+    "email": "",
+    "telephone": "0693835958",
+    "adresse": "250D Route Montgaillard, Res Terrass, St Denis",
+    "dateNaissance": null,
+    "notes": "Client ajouté automatiquement via rendez-vous: Rendez-vous pour livraison au montgaillard",
+    "dateCreation": "2025-08-12",
+    "derniereVisite": null,
+    "status": "actif",
+    "totalRendezVous": 0
+  },
+  {
+    "id": 17,
+    "nom": "Kia",
+    "prenom": "Ra Cla",
+    "email": "",
+    "telephone": "0693440795",
+    "adresse": "34 rue du saint alexis st gilles",
+    "dateNaissance": null,
+    "notes": "Client ajouté automatiquement via rendez-vous: Rendez-vous pour livraison de perruque à st gilles",
+    "dateCreation": "2025-08-12",
+    "derniereVisite": null,
+    "status": "actif",
+    "totalRendezVous": 0
   }
 ]
